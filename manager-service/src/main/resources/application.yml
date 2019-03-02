@@ -1,0 +1,14 @@
+server:
+  port: 8889
+spring:
+  application:
+    name: manager-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: false #不需要注册到Consul
+        serviceName: manager-service
+
+
